@@ -7,12 +7,12 @@ export default function Home() {
     <div className="bg-white flex w-full h-screen items-stretch justify-center">
       <Head>
         <title>Elega</title>
-        <meta name="description" content="Elega | Spreading Smiles | Elderly Care" />
+        <meta name="description" content="Elega | Simplifying Travel" />
         <link rel="icon" href="/logo.png" />
       </Head>
 
       <main className="bg-white w-full">
-        <div id='ziya' className='flex flex-col md:flex-row h-screen w-full justify-center items-center'>
+        <div id='elderly' className='flex flex-col md:flex-row h-screen w-full justify-center items-center'>
           <div className='flex flex-col h-screen w-full md:w-1/2 mt-10 md:mt-0 justify-start md:justify-center items-center'>
             <div className='hidden md:block'>
               <Image
@@ -63,9 +63,9 @@ export default function Home() {
                 Insurance covered
               </div>
             </div>
-            <Link href="#about">
+            <a href="https://bit.ly/4bfTMVD" target='_blank' rel="noopener noreferrer">
               <button className='mt-10 pt-2 pb-2 pl-10 pr-10 shadow-xl bg-black text-white rounded-lg'>Book Now</button>
-            </Link>
+            </a>
           </div>
           <div className='flex hidden md:block bg-black w-full md:w-1/2 h-screen relative'>
             <Image
