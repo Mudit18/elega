@@ -24,7 +24,7 @@ export default function Home() {
             </div>
             <div className='text-xl md:text-5xl mt-2 pb-4 pl-8 pr-8 pt-4 bg-black text-white font-extralight'>Elega</div>
             <div className='text-xl md:text-4xl pt-6 pb-5 pl-3 pr-3 md:pl-10 md:pr-10 font-extralight border border-black text-black'>LUGGAGE STORAGE NEAR YOU</div>
-            <div className='text-lg mb-5 pt-6 pb-5 pl-3 pr-3 md:pl-10 md:pr-10 font-extralight text-black txet-center'>Freedom to explore from Rs 200 per day.</div>
+            <div className='text-lg mb-5 pt-6 pb-5 pl-3 pr-3 md:pl-10 md:pr-10 font-extralight text-black txet-center'>Freedom to explore from Rs 20 per hour.</div>
             <div className='flex flex-col md:flex-row w-full gap-5 md:gap-20 pl-10 pr-10 items-center md:items-center md:items-start justify-center'>
               <div className='flex flex-row md:flex-col gap-5 text-black items-center justify-center text-center'>
                 <Image
