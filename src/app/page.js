@@ -109,12 +109,12 @@ export default function Home() {
               className='rounded-lg md:hidden mb-10 shadow-lg'
               src={'/job-hunt.png'}
               width={200}
-              height={200}
+              height={150}
             />
             <div className='text-lg md:text-5xl pt-2 pb-2 md:pt-6 md:pb-5 pl-10 pr-10 font-extralight border border-black text-black'>Our Solution</div>
-            <div className='text-center text-xl pt-10 pb-3 pl-3 pr-3 w-full md:w-1/2 font-extralight text-black'><b>Quality Hiring Redefined.</b></div>
-            <div className='text-center text-xl pt-3 pb-2 pl-3 pr-3 w-full md:w-1/2 font-extralight text-black'>Elega focuses on quality over quantity. Think of us as your tech talent scouts.</div>
-            <div className='text-center text-xl pt-1 pb-5 pl-3 pr-3 w-full md:w-1/2 font-extralight text-black'>Every candidate is rigorously vetted and pre-interviewed by our team of top-notch engineers. Clients receive comprehensive report cards for each candidate, saving valuable engineering bandwidth.</div>
+            <div className='text-center text-sm md:text-xl pt-10 pb-3 pl-3 pr-3 w-full md:w-1/2 font-extralight text-black'><b>Quality Hiring Redefined.</b></div>
+            <div className='text-center text-sm md:text-xl pt-3 pb-2 pl-3 pr-3 w-full md:w-1/2 font-extralight text-black'>Elega focuses on quality over quantity. Think of us as your tech talent scouts.</div>
+            <div className='text-center text-sm md:text-xl pt-1 pb-5 pl-3 pr-3 w-full md:w-1/2 font-extralight text-black'>Every candidate is rigorously vetted and pre-interviewed by our team of top-notch engineers. Clients receive comprehensive report cards for each candidate, saving valuable engineering bandwidth.</div>
             <Link href="#impact">
               <button className='mt-10 pt-2 pb-2 pl-10 pr-10 shadow-xl bg-black text-white rounded-lg'>What&apos;s the impact?</button>
             </Link>
@@ -122,25 +122,25 @@ export default function Home() {
         </div>
         <div id='impact' className='bg-white md:pt-5 md:pb-5 md:pr-20 flex flex-col md:flex-row h-screen w-full justify-center items-center'>
           <div className='bg-white md:ml-10 w-full md:w-1/2 md:h-screen flex flex-col items-center justify-center'>
-            <div className='text-md md:text-4xl pt-3 pb-2 pl-10 pr-10 font-extralight border border-black text-black'>VALUE WE ADD</div>
+            <div className='text-md md:text-4xl pt-1 pb-1 md:pt-3 md:pb-2 pl-10 pr-10 font-extralight border border-black text-black'>VALUE WE ADD</div>
             <Link href="#contact">
               <button className='mt-5 hidden md:block md:mt-10 pt-2 pb-2 pl-10 pr-10 shadow-xl bg-black text-white rounded-lg'>Join Us</button>
             </Link>
           </div>
-          <div className='flex pl-3 pr-3 mt-10 md:mt-0 md:pl-0 md:pr-0 flex-col md:h-screen w-full md:w-3/4 justify-center items-center'>
+          <div className='flex pl-3 pr-3 mt-0 md:pl-0 md:pr-0 flex-col md:h-screen w-full md:w-3/4 justify-center items-center'>
             <div className='flex flex-row w-full justify-center items-center'>
               <div className='flex flex-col w-1/2 pr-1 md:pr-10 justify-center items-end'>
                 <Image
                   unoptimized
                   className='rounded-lg shadow-lg'
                   src={'/winners.png'}
-                  width={200}
-                  height={200}
+                  width={180}
+                  height={180}
                 />
               </div>
               <div className='flex flex-col pl-5 md:pl-10 w-1/2 justify-center items-start'>
-                <div className='text-lg md:text-3xl pt-6 pb-1 md:font-extralight text-black'>Access Top Talent</div>
-                <div className='text-md mt-2 pb-2 md:pt-2 font-extralight text-black'>Our rigorous vetting process ensures only the best candidates reach your desk.</div>
+                <div className='text-sm md:text-3xl pt-1 md:pt-6 pb-1 md:font-extralight text-black'>Access Top Talent</div>
+                <div className='text-sm mt-2 pb-2 md:pt-2 font-extralight text-black'>Our rigorous vetting process ensures only the best candidates reach your desk.</div>
               </div>
             </div>
             <div className='flex flex-row mt-5 w-full justify-center items-center'>
@@ -149,13 +149,13 @@ export default function Home() {
                   unoptimized
                   className='rounded-lg shadow-lg'
                   src={'/bandwidth.png'}
-                  width={200}
-                  height={200}
+                  width={180}
+                  height={180}
                 />
               </div>
               <div className='flex flex-col pl-5 md:pl-10 w-1/2 justify-center items-start'>
-                <div className='text-lg md:text-3xl pt-6 pb-1 md:font-extralight text-black'>Engineering Bandwidth</div>
-                <div className='text-md mt-2 pb-2 md:pt-2 font-extralight text-black'>Save engineering bandwidth by eliminating time wasted on unqualified candidates</div>
+                <div className='text-sm md:text-3xl pt-1 md:pt-6 pb-1 md:font-extralight text-black'>Engineering Bandwidth</div>
+                <div className='text-sm mt-2 pb-2 md:pt-2 font-extralight text-black'>Save engineering bandwidth by eliminating time wasted on unqualified candidates</div>
               </div>
             </div>
             <div className='flex flex-row mt-5 w-full justify-center items-center'>
@@ -164,17 +164,17 @@ export default function Home() {
                   unoptimized
                   className='rounded-lg shadow-lg'
                   src={'/report.png'}
-                  width={200}
-                  height={200}
+                  width={180}
+                  height={180}
                 />
               </div>
               <div className='flex flex-col pl-5 md:pl-10 w-1/2 justify-center items-start'>
-                <div className='text-lg md:text-3xl pt-6 pb-1 md:font-extralight text-black'>Peace of Mind</div>
-                <div className='text-md mt-2 pb-2 md:pt-2 font-extralight text-black'>Receive detailed candidate report cards for prioritizing candidates</div>
+                <div className='text-sm md:text-3xl pt-1 md:pt-6 pb-1 md:font-extralight text-black'>Peace of Mind</div>
+                <div className='text-sm mt-2 pb-2 md:pt-2 font-extralight text-black'>Receive detailed candidate report cards for prioritizing candidates</div>
               </div>
             </div>
             <Link href="#contact">
-              <button className='md:hidden mt-10 pt-2 pb-2 pl-10 pr-10 shadow-xl bg-black text-white rounded-lg'>Join Us</button>
+              <button className='md:hidden mt-3 pt-2 pb-2 pl-10 pr-10 shadow-xl bg-black text-white rounded-lg'>Join Us</button>
             </Link>
           </div>
         </div>
