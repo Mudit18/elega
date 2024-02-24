@@ -1,4 +1,4 @@
-// File: /Users/mudit/workspace/cloakit/elega/src/app/layout.js
+// File: /Users/mudit/workspace/staffing/elega/src/app/layout.js
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
