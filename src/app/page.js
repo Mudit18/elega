@@ -29,7 +29,7 @@ export default function Home() {
               width={100}
               height={200}
             />
-            <div className='text-lg mt-10 pb-2 pl-5 pr-5 pt-2 bg-gradient-to-b from-cyan-600 via-cyan-800 to-cyan-600 text-white font-extralight'>Elevating Tech Hiring</div>
+            <div className='text-lg mt-10 pb-2 pl-5 pr-5 pt-2 bg-cyan-600 text-white'>Elevating Tech Hiring</div>
             <div className='text-5xl pt-6 pb-5 pl-20 pr-20 font-extralight border border-white text-white'>Elega</div>
             <Link href="#about">
               <div className='hidden absolute bottom-5 m-auto left-0 right-0 md:flex flex-col justify-center items-center'>
@@ -120,7 +120,7 @@ export default function Home() {
               width={250}
               height={200}
             />
-            <div className='text-lg md:text-5xl pt-2 pb-2 md:pt-6 md:pb-5 pl-10 pr-10 md:font-extralight border border-white text-white'>The Problem</div>
+            <div className='text-lg md:text-5xl pt-2 pb-2 md:pt-6 md:pb-5 pl-10 pr-10 md:font-extralight border border-white text-white'>THE PROBLEM</div>
             <div className='text-center text-sm md:text-xl pt-10 pb-3 pl-3 pr-3 w-full md:w-1/2 font-extralight text-white'><b>The Cost of Traditional Hiring</b></div>
             <div className='text-center text-sm md:text-xl pt-3 pb-2 pl-3 pr-3 w-full md:w-1/2 font-extralight text-white'>Traditional recruitment agencies flood clients with quantity over quality.</div>
             <div className='text-center text-sm md:text-xl pt-1 pb-5 pl-3 pr-3 w-full md:w-1/2 font-extralight text-white'>Companies waste valuable engineering bandwidth sifting through numerous unqualified candidates.</div>
@@ -142,7 +142,7 @@ export default function Home() {
                 objectFit='cover'
               />
             </div>
-            <div className='text-lg md:text-5xl pt-2 pb-2 md:pt-6 md:pb-5 pl-10 pr-10 md:font-extralight border border-white text-white'>Our Solution</div>
+            <div className='text-lg md:text-5xl pt-2 pb-2 md:pt-6 md:pb-5 pl-10 pr-10 md:font-extralight border border-white text-white'>OUR SOLUTION</div>
             <div className='text-center text-sm md:text-xl pt-10 pb-3 pl-3 pr-3 w-full md:w-1/2 font-extralight text-white'><b>Quality Hiring Redefined</b></div>
             <div className='text-center text-sm md:text-xl pt-3 pb-2 pl-3 pr-3 w-full md:w-1/2 font-extralight text-white'>Elega focuses on quality over quantity. Think of us as your tech talent scouts.</div>
             <div className='text-center text-sm md:text-xl pt-1 pb-5 pl-3 pr-3 w-full md:w-1/2 font-extralight text-white'>Every candidate is rigorously vetted and pre-interviewed by our team of top-notch engineers. Clients receive comprehensive report cards for each candidate, saving valuable engineering bandwidth.</div>
