@@ -158,7 +158,7 @@ export default function Home() {
           <div className='relative md:ml-10 w-full md:w-1/2 md:h-screen flex flex-col items-center justify-center'>
             <div className='text-md md:text-4xl pt-1 pb-1 md:pt-3 md:pb-2 pl-10 pr-10 md:font-extralight border border-white text-white'>VALUE WE ADD</div>
             <Link href="#contact">
-              <div className='absolute bottom-20 m-auto left-0 right-0 flex flex-col justify-center items-center'>
+              <div className='absolute bottom-20 m-auto left-0 right-0 hidden md:flex flex-col justify-center items-center'>
                 <div className='text-sm pt-3 pb-2 font-extralight text-white'>Join Us</div>
                 <button className='text-xl animate-bounce text-white'>&darr;</button>
               </div>
