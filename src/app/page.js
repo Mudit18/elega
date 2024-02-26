@@ -221,7 +221,7 @@ export default function Home() {
         <div id='contact' className='flex flex-col bg-gradient-to-b from-gray-900 via-gray-950 to-gray-900 border-y border-black h-screen w-full justify-center items-center'>
           <div className='text-lg md:text-4xl pt-2 md:pt-6 pb-2 md:pb-5 pl-10 pr-10 md:font-extralight border border-white text-white'>JOIN US</div>
           <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/fYN7bn3TsMzzbccS9">
-            <div className='shadow-md shadow-cyan-900 flex justify-center w-64 mt-10 pt-3 pb-3 pl-2 pr-2 shadow-xl bg-cyan-500 text-white rounded-lg'>
+            <div className='shadow-md shadow-cyan-950 flex justify-center w-64 mt-10 pt-3 pb-3 pl-2 pr-2 shadow-xl bg-cyan-500 text-white rounded-lg'>
               <span>Sign Up</span>
             </div>
           </a>
