@@ -1,3 +1,5 @@
+import logo from '../../assets/images/logo.png';
+
 export const Logo = () => (
-  <img src='src/assets/images/logo.png' width="40" height="40"/>
+  <img src={logo} width="40" height="40"/>
 );
