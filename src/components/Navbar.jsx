@@ -65,9 +65,9 @@ export const Navbar = () => {
            bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-6 pt-2 pb-2 text-sm flex"
               href="https://forms.gle/fYN7bn3TsMzzbccS9"
               target="_blank"
-              aria-label="join now"
+              aria-label="recruit now"
             >
-              <span className="pt-px">Join Now</span>
+              <span className="pt-px">Recruit Now</span>
             </a>
           </div>
         </motion.div>
@@ -111,7 +111,7 @@ export const Navbar = () => {
                 href="https://forms.gle/fYN7bn3TsMzzbccS9"
                 target="_blank"
               >
-                Join now
+                Recruit now
               </a>
             </div>
           </motion.div>
