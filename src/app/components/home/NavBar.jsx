@@ -29,7 +29,7 @@ function Navbar() {
               <div className="text-white mr-2 text-6xl">
                 <Logo />
               </div>
-              <div className="text-white font-['Inter'] font-bold text-xl">
+              <div className="text-white font-bold text-xl">
                 Elega
               </div>
             </div>
