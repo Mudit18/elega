@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[811],{6811:function(e,s,r){r.r(s);var a=r(3827);s.default=()=>(0,a.jsx)("div",{className:"w-full lg:w-3/5 mx-auto",children:(0,a.jsx)("div",{className:"border-t border-customGrayBorder"})})}}]);

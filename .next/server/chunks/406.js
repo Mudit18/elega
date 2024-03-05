@@ -1,0 +1,1 @@
+"use strict";exports.id=406,exports.ids=[406],exports.modules={406:(r,s,e)=>{e.r(s),e.d(s,{default:()=>t});var d=e(5344);let t=()=>d.jsx("div",{className:"w-full lg:w-3/5 mx-auto",children:d.jsx("div",{className:"border-t border-customGrayBorder"})})}};
