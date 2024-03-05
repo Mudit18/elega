@@ -12,7 +12,7 @@ const navbarLinks = [
   // { label: "Refer & Earn", href: "/refer", ariaLabel: "Refer & Earn" },
 ];
 
-const Navbar = () => {
+function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

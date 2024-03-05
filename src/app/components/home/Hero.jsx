@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import { InvitationModal } from "./InvitationModal";
 
-export const Hero = () => {
+export default function Hero() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (

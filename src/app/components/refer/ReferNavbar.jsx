@@ -11,7 +11,7 @@ const navbarLinks = [
   { label: "Recruit", href: "/", ariaLabel: "Recruit" },
 ];
 
-export const ReferNavbar = () => {
+export default function ReferNavbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

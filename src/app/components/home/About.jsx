@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import { WrongArrowIcon } from "../../assets/icons/WrongArrowIcon";
 
-const About = () => {
+function About () {
   return (
     <section
       id="problem"

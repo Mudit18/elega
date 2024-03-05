@@ -1,17 +1,15 @@
 'use client'
 
-import dynamic from 'next/dynamic';
-import { Hero } from './components/home/Hero';
+import About from './components/home/About';
+import Divider from './components/common/Divider';
+import Footer from './components/common/Footer';
+import ScrollUpButton from './components/common/ScrollUpButton';
+import Hero from './components/home/Hero';
+import Navbar from './components/home/NavBar';
+import Solution from './components/home/Solution';
+import SolutionDiagonal from './components/home/SolutionDiagonal';
 import "./styles/Diagonals.css";
 import "./styles/Theme.css";
-
-const Navbar = dynamic(() => import('./components/home/Navbar'));
-const About = dynamic(() => import('./components/home/About'));
-const Divider = dynamic(() => import('./components/common/Divider'));
-const Solution = dynamic(() => import('./components/home/Solution'));
-const SolutionDiagonal = dynamic(() => import('./components/home/SolutionDiagonal'));
-const Footer = dynamic(() => import('./components/common/Footer'));
-const ScrollUpButton = dynamic(() => import('./components/common/ScrollUpButton'));
 
 export default function Home() {
   return (

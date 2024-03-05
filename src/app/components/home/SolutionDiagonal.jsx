@@ -4,7 +4,7 @@ import { useState } from "react";
 import { InvitationModal } from "./InvitationModal";
 import { CheckArrowIcon } from "../../assets/icons/CheckArrowIcon";
 
-const SolutionDiagonal = () => {
+function SolutionDiagonal() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
