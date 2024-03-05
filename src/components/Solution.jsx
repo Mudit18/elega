@@ -6,7 +6,7 @@ import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
 export const Solution = () => (
   <section
-    id="features" 
+    id="approach" 
     className="w-full bg-customDarkBg2 mt-12 sm:mt-20 mb-10 lg:my-20pt-[2rem] pt-[6rem] lg:pt-10">
     <motion.div
       initial={{ opacity: 0 }}
@@ -37,27 +37,22 @@ export const Solution = () => (
         <div className="w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8">
           <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
             <span className="custom-block-subtitle">
-              Quality Hiring Redefined
+              Our Approach
             </span>
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-              Think of us as your tech talent scouts.
+              Unlike any solution you used before
             </h2>
             <p className="mb-12 text-customGrayText leading-loose">
-            Every candidate is rigorously vetted and pre-interviewed by our team of top-notch engineers. 
-            You receive comprehensive report cards for each candidate, saving valuable engineering bandwidth.
+              At Elega, we specialize in curating connections between businesses and top-tier tech talent, committed to excellence in every match.
             </p>
             <ul className="mb-6 text-white">
               <li className="mb-4 flex">
                 <CheckArrowIcon />
-                <span>Candidates with upfront references</span>
+                <span>Referral-sourced candidates</span>
               </li>
               <li className="mb-4 flex">
                 <CheckArrowIcon />
-                <span>Resume scoring to match the job description</span>
-              </li>
-              <li className="mb-4 flex">
-                <CheckArrowIcon />
-                <span>Screening interviews with detailed report cards</span>
+                <span>Pre-screened & interviewed talent</span>
               </li>
             </ul>
           </div>

@@ -5,9 +5,9 @@ import { Logo } from "../assets/logos/Logo";
 
 const navbarLinks = [
   { label: "Home", href: "#home", ariaLabel: "Home" },
-  { label: "About", href: "#about", ariaLabel: "About" },
-  { label: "Features", href: "#features", ariaLabel: "Features" },
-  { label: "Solution", href: "#solution", ariaLabel: "Solution" },
+  { label: "Problem", href: "#problem", ariaLabel: "Problem" },
+  { label: "Our Approach", href: "#approach", ariaLabel: "Our Approach" },
+  { label: "Why Us", href: "#solution", ariaLabel: "Why Us" },
   { label: "Contact", href: "#contact", ariaLabel: "Contact" },
 ];
 

@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import { InvitationModal } from "./InvitationModal";
 import featuresdiagonal from "../assets/images/profiling.png";
+import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
 export const SolutionDiagonal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -31,21 +32,30 @@ export const SolutionDiagonal = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center bg-customDarkBg1 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
+        <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center bg-customDarkBg1 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col mb-16">
           <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
             <span className="custom-block-subtitle">
-              Accelerate Your Success
+              Why choose us?
             </span>
             <h2 className="mt-10 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-              One stop tech hiring solution
+              One-stop tech hiring solution
             </h2>
-            <p className="mb-16 text-customGrayText leading-loose">
-            Our rigorous vetting process ensures only the best candidates reach you - 
-            saving engineering bandwidth by eliminating time wasted on unqualified candidates.
+            <p className="mb-8 text-customGrayText leading-loose">
+              We understand the importance of quality when it comes to building your team. Our goal is simple: to connect you with talent that not only meets but exceeds your expectations.
             </p>
+            <ul className="mb-6 text-white">
+              <li className="mb-4 flex">
+                <CheckArrowIcon />
+                <span>Efficient process &#8208; save time & resources</span>
+              </li>
+              <li className="mb-4 flex">
+                <CheckArrowIcon />
+                <span>Thorough screening ensures quality candidates.</span>
+              </li>
+            </ul>
             <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/fYN7bn3TsMzzbccS9">
               <div
-                className="w-[210px] h-12 custom-button-colored mr-10 "
+                className="mt-5 w-[210px] h-12 custom-button-colored mr-10 "
                 onClick={null}
               >
                 Get Started
@@ -56,7 +66,7 @@ export const SolutionDiagonal = () => {
             <img
               src={featuresdiagonal}
               alt="f1"
-              className="rounded-xl bg-[rgb(255,255,255,0.01)] px-4 py-4 custom-border-gray"
+              className="rounded-xl bg-[rgb(255,255,255,0.01)] px-4 py-8 custom-border-gray"
             />
           </div>
         </div>
