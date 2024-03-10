@@ -1,4 +1,4 @@
-## Getting Started
+## Elega | Elevating Tech Hiring
 
 First, run the development server:
 
