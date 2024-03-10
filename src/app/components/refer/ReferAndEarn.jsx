@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { signIn } from "next-auth/react";
+import React from "react";
 
 const login = () => {
   try {

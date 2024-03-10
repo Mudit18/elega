@@ -1,8 +1,12 @@
 import { FirestoreAdapter } from '@auth/firebase-adapter';
 import NextAuth from 'next-auth';
 import LinkedInProvider from 'next-auth/providers/linkedin';
-import {db} from '../../../firebase/firebase';
-import { getDocument, setDocument } from '@/app/firebase/firebaseUtils';
+import { cert } from "firebase-admin/app"
+
+const crt = process.env.FIREBASE_PRIVATE_KEY.replace(
+  /\\n/g,
+ '\n',
+);
 
 const handler = NextAuth({
   providers: [
@@ -24,7 +28,13 @@ const handler = NextAuth({
       },
     }),
   ],
-  adapter: FirestoreAdapter(db),
+  adapter: FirestoreAdapter({
+    credential: cert({
+      projectId: process.env.FIREBASE_PROJECT_ID,
+      clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+      privateKey: crt,
+    })
+  }),
   callbacks: {
     async session({ session, user }) {
       return {...session, user: {...session.user, ...user}};
