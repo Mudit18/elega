@@ -10,6 +10,7 @@
 /coverage
 
 # next.js
+.next
 
 # production
 
@@ -34,3 +35,4 @@ next-env.d.ts
 
 # firebase key
 elega-c96ed-firebase-adminsdk-w90ju-2ffea4beaf.json
+
