@@ -2,12 +2,13 @@
 import { motion } from "framer-motion";
 
 import { CheckArrowIcon } from "../../assets/icons/CheckArrowIcon";
+import React from "react";
 
 function Solution() {
   return (
     <section
-      id="approach" 
-      className="w-full bg-customDarkBg2 mt-12 sm:mt-20 mb-10 lg:my-20pt-[2rem] pt-[6rem] lg:pt-10">
+      id="approach"
+      className="w-full bg-customDarkBg2 pt-12 sm:pt-20 pt-[6rem] lg:pt-30 pb-10 lg:my-20pt-[2rem]">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

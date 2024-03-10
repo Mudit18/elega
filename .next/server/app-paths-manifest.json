@@ -1,5 +1,14 @@
 {
   "/_not-found": "app/_not-found.js",
+  "/api/createCustomToken/route": "app/api/createCustomToken/route.js",
+  "/api/mail/sendEmail/route": "app/api/mail/sendEmail/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js"
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/page": "app/page.js",
+  "/refer/join/page": "app/refer/join/page.js",
+  "/refer/page": "app/refer/page.js",
+  "/refer/dashboard/page": "app/refer/dashboard/page.js",
+  "/refer/dashboard/new/page": "app/refer/dashboard/new/page.js",
+  "/refer/dashboard/jobs/page": "app/refer/dashboard/jobs/page.js",
+  "/refer/dashboard/profile/page": "app/refer/dashboard/profile/page.js"
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { signIn } from "next-auth/react";
 
 import { Logo } from "../../assets/logos/Logo";
 
@@ -10,6 +11,16 @@ const navbarLinks = [
   { label: "Solution", href: "/#solution", ariaLabel: "Solution" },
   { label: "Recruit", href: "/", ariaLabel: "Recruit" },
 ];
+
+const login = () => {
+  try {
+    signIn('linkedin', {
+      callbackUrl: process.env.NEXTAUTH_URL
+    });
+  } catch (e) {
+    console.error(e);
+  }
+}
 
 export default function ReferNavbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +34,7 @@ export default function ReferNavbar() {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
-          <a className="navbar-link" href="#home" aria-label="Home">
+          <a className="navbar-link" href="/#home" aria-label="Home">
             <div className="flex justify-start items-center grow basis-0">
               <div className="text-white mr-2 text-6xl">
                 <Logo />
@@ -53,6 +64,7 @@ export default function ReferNavbar() {
             ))}
           </div>
         </motion.div>
+        {/* TODO handle the refer now option based on session */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -60,15 +72,13 @@ export default function ReferNavbar() {
           exit={{ opacity: 0 }}
         >
           <div className="grow basis-0 justify-end hidden lg:flex">
-            <a
-              className="text-white custom-border-gray rounded-xl
+            <div
+              className="cursor-pointer text-white custom-border-gray rounded-xl
            bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-6 pt-2 pb-2 text-sm flex"
-              href="https://forms.gle/fYN7bn3TsMzzbccS9"
-              target="_blank"
-              aria-label="join now"
+              onClick={login}
             >
-              <span className="pt-px">Join Now</span>
-            </a>
+              <span className="pt-px">Refer Now</span>
+            </div>
           </div>
         </motion.div>
         <div
@@ -105,14 +115,13 @@ export default function ReferNavbar() {
                   {label}
                 </a>
               ))}
-              <a
-                className="text-white custom-border-gray rounded-xl
+              <div
+                className="cursor-pointer text-white custom-border-gray rounded-xl
            bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-6 pt-2 pb-2 text-sm flex"
-                href="https://forms.gle/fYN7bn3TsMzzbccS9"
-                target="_blank"
+                onClick={login}
               >
-                Join now
-              </a>
+                Refer now
+              </div>
             </div>
           </motion.div>
         )}

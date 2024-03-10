@@ -1,9 +1,10 @@
 import { WhatsAppIcon } from "../../assets/icons/WhatsAppIcon";
 import { MailIcon } from "../../assets/icons/MailIcon";
+import React from "react";
 
 const footerData = [
   {
-    title: "Products",
+    title: "Prod  ucts",
     items: ["Services", "About Us", "News and Stories", "Roadmap"],
   },
   {
@@ -31,7 +32,7 @@ const Footer = () => {
           <div className="flex flex-wrap justify-center w-full">
             <div className="sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] lg:w-1/3 mb-8">
               <div className="flex justify-center lg:justify-center items-center">
-                <div className="text-white font-['Inter'] font-bold text-xl">
+                <div className="text-white font-bold text-xl pt-5">
                   Contact Us
                 </div>
               </div>
@@ -40,7 +41,7 @@ const Footer = () => {
                   className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
                   href="https://wa.me/+919799143281"
                   target="_blank"
-                  rel="noopener noreferrer" 
+                  rel="noopener noreferrer"
                 >
                   <WhatsAppIcon />
                 </a>
@@ -48,7 +49,7 @@ const Footer = () => {
                   className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
                   href="mailto:contact@elega.co.in"
                   target="_blank"
-                  rel="noopener noreferrer" 
+                  rel="noopener noreferrer"
                 >
                   <MailIcon />
                 </a>

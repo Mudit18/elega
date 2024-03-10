@@ -1,13 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import { motion } from "framer-motion";
+import React from "react";
 
 import { WrongArrowIcon } from "../../assets/icons/WrongArrowIcon";
 
-function About () {
+function About() {
   return (
     <section
       id="problem"
-      className="w-full bg-customDarkBg2 mt-8 mb-8 sm:mt-16 sm:mb-16 xl:mt-0  xl:m pt-[6rem] lg:pt-16"
+      className="w-full bg-customDarkBg2 mt-8 sm:mt-16 pb-8 sm:pb-16 xl:mt-0 pt-[6rem] lg:pt-16"
     >
       <motion.div
         initial={{ opacity: 0 }}
@@ -20,10 +21,10 @@ function About () {
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
               <span className="custom-block-subtitle">The Problem</span>
               <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-              Cost of Traditional Hiring
+                Cost of Traditional Hiring
               </h2>
               <p className="mb-10 text-customGrayText leading-loose">
-              Traditional hiring overwhelms recruiters with too many profiles, sacrificing quality. Consequently, companies waste engineering bandwidth on unqualified candidates.
+                Traditional hiring overwhelms recruiters with too many profiles, sacrificing quality. Consequently, companies waste engineering bandwidth on unqualified candidates.
               </p>
               <ul className="mb-6 text-white">
                 <li className="mb-4 flex">
