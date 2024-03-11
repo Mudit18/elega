@@ -1,13 +1,12 @@
 'use client'
 
 import { useSession } from 'next-auth/react';
-import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import Footer from '../common/Footer';
 import Loader from '../common/Loader';
 import ScrollUpButton from '../common/ScrollUpButton';
 import ReferAndEarn from './ReferAndEarn';
 import ReferNavbar from './ReferNavbar';
-import { useRouter } from 'next/navigation';
 
 export default function Refer() {
   const { data: session, status } = useSession();
@@ -17,16 +16,16 @@ export default function Refer() {
     router.replace('/refer/dashboard');
   }
 
-  if (status === 'loading') {
+  if (status !== 'authenticated' && status !== 'loading') {
+    return (
+      <>
+        <ReferNavbar />
+        <ReferAndEarn />
+        <Footer />
+        <ScrollUpButton />
+      </>
+    )
+  } else {
     return <Loader />
   }
-
-  return (
-    <>
-      <ReferNavbar />
-      <ReferAndEarn />
-      <Footer />
-      <ScrollUpButton />
-    </>
-  )
 };
