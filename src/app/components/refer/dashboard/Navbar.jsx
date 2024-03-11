@@ -1,4 +1,4 @@
-import { useSession } from 'next-auth/react';
+import { signOut, useSession } from 'next-auth/react';
 import Image from 'next/image';
 import React, { useState } from 'react';
 
@@ -29,12 +29,12 @@ export default function Navbar(props) {
                             </button>
                             {showUserDropDown &&
                                 <div className="dropdown-menu dropdown-menu-end dropdown-menu-animate-up !bg-customDarkBg2 d-block right-0" aria-labelledby="drop2">
-                                    <div className="message-body">
+                                    <div className="message-body flex justify-center items-center flex-col px-2">
                                         <a href="/refer/dashboard/profile" className="d-flex align-items-center gap-2 justify-center items-center px-4 py-2">
                                             <i className="ti ti-user fs-6 text-white"></i>
                                             <p className="mb-0 fs-3 text-white">My Profile</p>
                                         </a>
-                                        <a href="/api/auth/signOut" className="btn text-white bg-primary mx-3 mt-2 d-block">Logout</a>
+                                        <button onClick={() => { signOut() }} className="btn w-full text-white bg-primary mt-2 d-block">Logout</button>
                                     </div>
                                 </div>
                             }
