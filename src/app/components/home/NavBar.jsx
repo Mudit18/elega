@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { Logo } from "../../assets/logos/Logo";
@@ -8,8 +8,7 @@ const navbarLinks = [
   { label: "Problem", href: "#problem", ariaLabel: "Problem" },
   { label: "Our Approach", href: "#approach", ariaLabel: "Our Approach" },
   { label: "Why Us", href: "#solution", ariaLabel: "Why Us" },
-  { label: "Contact", href: "#contact", ariaLabel: "Contact" },
-  // { label: "Refer & Earn", href: "/refer", ariaLabel: "Refer & Earn" },
+  { label: "Refer & Earn", href: "/refer", ariaLabel: "Refer & Earn" },
 ];
 
 function Navbar() {

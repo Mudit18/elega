@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 import { InvitationModal } from "./InvitationModal";
+import React from "react";
 
 export default function Hero() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -17,7 +18,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="text-customSecondary text-sm sm:text-base  mb-6 sm:mt-32 mt-16  font-bold">
+          <div className="text-customSecondary text-sm sm:text-base  mb-6 mt-16  font-bold">
             Elevating Tech Hiring
           </div>
         </motion.div>
@@ -57,7 +58,7 @@ export default function Hero() {
                 Get Started
               </div>
             </a>
-            <a href="#about" aria-label="About">
+            <a href="#problem" aria-label="About">
               <div
                 className="w-64 sm:w-52 h-12 rounded-xl font-bold text-white border border-solid  flex justify-center items-center cursor-pointer bg-customDarkBg2 hover:bg-customDarkBg3 border-customPrimary transition"
                 onClick={null}

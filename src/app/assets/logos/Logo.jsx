@@ -1,5 +1,6 @@
-import Image from 'next/image';
+import React from "react";
 
+/* eslint-disable @next/next/no-img-element */
 export const Logo = () => (
-  <Image unoptimized src={'logo.png'} alt='Elega Logo' width={40} height={40}/>
+  <img src={'logo.png'} width="40" height="40" alt="Elega Logo" />
 );
