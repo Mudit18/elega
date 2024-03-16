@@ -6,7 +6,7 @@ import { Logo } from "../../assets/logos/Logo";
 
 const navbarLinks = [
   { label: "Home", href: "/#home", ariaLabel: "Home" },
-  { label: "About", href: "/#about", ariaLabel: "About" },
+  { label: "About", href: "/#problem", ariaLabel: "About" },
   { label: "Features", href: "/#features", ariaLabel: "Features" },
   { label: "Solution", href: "/#solution", ariaLabel: "Solution" },
   { label: "Recruit", href: "/", ariaLabel: "Recruit" },
