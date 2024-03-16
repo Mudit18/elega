@@ -58,7 +58,7 @@ export default function Hero() {
                 Get Started
               </div>
             </a>
-            <a href="#about" aria-label="About">
+            <a href="#problem" aria-label="About">
               <div
                 className="w-64 sm:w-52 h-12 rounded-xl font-bold text-white border border-solid  flex justify-center items-center cursor-pointer bg-customDarkBg2 hover:bg-customDarkBg3 border-customPrimary transition"
                 onClick={null}
