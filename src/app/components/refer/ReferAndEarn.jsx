@@ -1,9 +1,22 @@
 import { motion } from "framer-motion";
+import { signIn } from "next-auth/react";
+import React from "react";
+
+const login = () => {
+  try {
+    signIn('linkedin', {
+      callbackUrl: process.env.NEXTAUTH_URL
+    });
+  } catch (e) {
+    console.error(e);
+  }
+}
 
 export default function ReferAndEarn() {
+
   return (
     <section
-      className="w-screen  flex justify-center items-center bg-customDarkBg1 mb-[28vw] md:mb-[18vw] lg:mb-[10vw] xl:mb-[13vw] 2xl:mb-60 hero-bg-gradient pb-24 sm:pb-32 md:pb-44 lg:pb-0"
+      className="w-screen  flex justify-center items-center bg-customDarkBg1 mb-4 lg:mb-8 hero-bg-gradient pb-24 sm:pb-32 md:pb-44 lg:pb-0"
     >
       <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 md:pt-16 lg:pt-20 text-center">
         <motion.div
@@ -11,7 +24,7 @@ export default function ReferAndEarn() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="text-customSecondary text-sm sm:text-base  mb-6 sm:mt-32 mt-16  font-bold">
+          <div className="text-customSecondary text-sm sm:text-base  mb-6 mt-16  font-bold">
             Refer to Earn
           </div>
         </motion.div>
@@ -43,14 +56,12 @@ export default function ReferAndEarn() {
           transition={{ duration: 0.5, delay: 0.15 }}
         >
           <div className="flex flex-col gap-2 sm:flex-row mt-14 mb-24 sm:mb-40 justify-center">
-            <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/fYN7bn3TsMzzbccS9">
-              <div
-                className="custom-button-colored w-64 sm:w-52 h-12 mr-0 sm:mr-4 lg:mr-6 mb-2 sm:mb-0"
-                onClick={null}
-              >
-                Get Started
-              </div>
-            </a>
+            <div
+              className="custom-button-colored w-64 sm:w-52 h-12 mr-0 sm:mr-4 lg:mr-6 mb-2 sm:mb-0"
+              onClick={login}
+            >
+              Sign-In with LinkedIn
+            </div>
           </div>
         </motion.div>
       </div>
